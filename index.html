@@ -11,15 +11,57 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 section-calculator">
+            <div class="col-lg-4 section__calculator">
                 <h1>Interés compuesto</span></h1>
 
                 <!-- Formulario de ingreso -->
+                <div class="form">
+                    <form action="#" class="form__content">
+                        <div class="form__box">
+                            <input type="number" name="" id="" class="form__input" placeholder="Capital inicial">
+                            <label for="" class="form__label">Capital inicial</label>
+                            <div class="form__shadow"></div>
+                        </div>
+
+                        <div class="form__box">
+                            <input type="number" name="" id="" class="form__input" placeholder="Período de interés">
+                            <label for="" class="form__label">Período de interés</label>
+                            <div class="form__shadow"></div>
+                        </div>
+
+                        <div class="form__box">
+                            <input type="number" name="" id="" class="form__input" placeholder="Tasa de interés anual">
+                            <label for="" class="form__label">Tasa de interés anual</label>
+                            <div class="form__shadow"></div>
+                        </div>
+
+                        <div class="form__box">
+                            <input type="number" name="" id="" class="form__input" placeholder="Numero de años">
+                            <label for="" class="form__label">Numero de años</label>
+                            <div class="form__shadow"></div>
+                        </div>
+
+                        <div class="form__buttons">
+                            <div class="form__button">
+                                <input type="submit" class="form__submit" value="Reiniciar">
+                            </div>
+    
+                            <div class="form__button">
+                                <input type="submit" class="form__submit" value="Calcular">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <p><span class="fw-bold">Capital inicial:</span> monto de dinero que tiene disponible para invertir inicialmente.</p>
+                <p><span class="fw-bold">Período de interés:</span> cantidad de veces por año que secapitalizará el interés.</p>
+                <p><span class="fw-bold">Tasa de interés anual:</span> su tasa de interés anualestimada.</p>
+                <p><span class="fw-bold">Numero de años:</span> cantidad de tiempo, en años, que tiene previsto ahorrar.</p>
             </div>
 
-            <div class="col-lg-8 section-info">
+            <div class="col-lg-8 section__info">
                 <!-- Table suponiendo una simulacion de: capital_inicial = 100000, frecuencia_periodos = 12, tasa_interes = 37, tiempo = 1 -->
-                <h3>Resumen de periodos</h3>
+                <p>Resumen de periodos</p>
                 <table class="table text-end">
                     <thead>
                         <tr>
@@ -118,7 +160,7 @@
                     </tbody>
                 </table>
 
-                <h3>Resumen final</h3>
+                <p>Resumen final</p>
                 <table class="table text-end">
                     <thead>
                         <tr>
